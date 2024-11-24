@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a {
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            color: aqua;
+            text-decoration: underline;
+        }
+        a:active {
+            color: chocolate;
+
+        }
+        .especial::before {
+            content: '->';
+        }
+        .especial::after {
+            content: '<-';
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Caio893" target="_blank" class="especial">Repositório Github</a></li>
+        <li><a href="https://www.estudonauta.com/" target="_blank" class="especial">Estudonauta</a></li>
+        <li><a href="https://www.instagram.com/kyoaraujo/" target="_blank" class="especial">Instagram</a></li>
+    </ul>   
+</body>
+</html>
