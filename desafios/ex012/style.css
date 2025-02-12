@@ -37,10 +37,9 @@
     --font3: 'Sriracha', cursive;
 }
 
-html,
-body {
+html, body {
     min-height: 100vh;
-    background: darkgray;
+    background: rgb(24, 23, 23);
     font-family: var(--font1);
 }
 

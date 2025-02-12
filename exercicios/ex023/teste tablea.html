@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Tabela</title>
+    <style>
+        table {
+            text-align: center;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: #ffffff;
+        }
+        thead {
+            background-color: gray;
+            color: white;
+
+        }
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+        caption {
+            font-weight: bolder;
+            font-size: 1.5em;
+            text-align: center;
+            background-color: rgb(235, 235, 235);
+            padding: 5px;
+        }
+        thead {
+            background-color: #636363;
+            color: white;
+        }
+        tfoot {
+            background-color: 636363;
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Cidade</th>
+                <th scope="col">População</th>
+            </tr>            
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <th>110.659.804</th>
+            </tr>
+        </tfoot>
+    </table>
+    <table id="table2">
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <td>Grupo</td>
+                <td>Nomes</td>
+                <td colspan="3">Filmes Favoritos</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Mulheres</td>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Homens</td>
+                <td>Bruno mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabio Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="2">Área</td>
+                <td rowspan="2">Disciplinas</td>
+                <td colspan="2">Notas</td>
+                <td rowspan="2">Média</td>
+            </tr>
+            <tr>
+                <td>Nota 1</td>
+                <td>Nota 2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Exatas</td>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                    <td colspan="4" style="background-color: gray;">Média de Exatas</td>
+                    <td style="background-color: gray;">0.0</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Humanas</td>
+                <td colspan="1">História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td colspan="1">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                    <td colspan="4" style="background-color: grey;">Média de Humanas</td>
+                    <td style="background-color: gray;">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+<table>
+    <tr>
+        <td>1A</td>
+        <td>1B</td>
+        <td>1C</td>
+        <td>1D</td>
+        <td>1E</td>
+    </tr>
+    <tr>
+        <td>2A</td>
+        <td>2B</td>
+        <td>2C</td>
+        <td>2D</td>
+        <td>2E</td>
+    </tr>
+    <tr>
+        <td>3A</td>
+        <td>3B</td>
+        <td>3C</td>
+        <td>3D</td>
+        <td>3E</td>
+    </tr>
+    <tr>
+        <td>4A</td>
+        <td>4B</td>
+        <td>4C</td>
+        <td>4D</td>
+        <td>4E</td>
+    </tr>
+<colgroup>
+<col class="c1">
+<col class="c2" span="2">
+<col class="c3">
+<col class="c1>
+</table>
+</body>
+</html>
